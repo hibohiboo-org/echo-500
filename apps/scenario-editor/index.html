@@ -27,21 +27,8 @@
         }
       }
     </style>
-    <script>
-      // GitHub Pages での SPA アドレス解決用 https://maku.blog/p/9u8it5f/
-      (function () {
-        const query = window.location.search;
-        if (query.startsWith('?p=')) {
-          const route = decodeURIComponent(query.substr(3));
-          window.history.replaceState(null, null, route);
-        }
-      })();
-    </script>
   </head>
   <body>
-    <!-- Github Pages で@kuzu/kuzu-wasmを使うため、SharedArrayBuffer を使えるようにheaderにcross-origin設定を付与  -->
-    <script src="/coi-serviceworker.js"></script>
-
     <div id="root">
       <div class="spinner-container">
         <div>
