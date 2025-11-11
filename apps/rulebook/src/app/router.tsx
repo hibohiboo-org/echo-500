@@ -5,6 +5,7 @@ import Test from '@/pages/Test';
 function AppRouter() {
   return (
     <Router
+      base={`/${BASE_PATH}`}
       root={(props) => (
         <>
           <h1>Site Title</h1>
