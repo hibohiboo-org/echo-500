@@ -2,10 +2,8 @@
   "name": "echo-500",
   "compatibility_date": "2025-04-01",
   "assets": {
-    "directory": "./apps/frontend/dist",
+    "directory": "./apps/dist",
     "not_found_handling": "single-page-application",
   },
-  "main": "./apps/backend/dist/index.js",
   "compatibility_flags": ["nodejs_compat"],
-  "run_worker_first": ["/api/*"],
 }
