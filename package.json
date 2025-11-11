@@ -1,8 +1,9 @@
 {
-  "name": "trpg-scenario-maker",
+  "name": "echo-500",
   "packageManager": "bun@1.3.2",
   "private": true,
   "scripts": {
+    "init": "git config --local core.hooksPath .githooks && echo Changed hooks directory when npm install",
     "build": "bunx --bun turbo build",
     "lint": "turbo lint",
     "ncu": "turbo ncu --force && ncu -u",

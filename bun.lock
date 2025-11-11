@@ -20,7 +20,7 @@
         "vitest": "^4.0.8",
       },
     },
-    "apps/frontend": {
+    "apps/scenario-editor": {
       "name": "@trpg-scenario-maker/frontend",
       "version": "0.0.0",
       "dependencies": {
@@ -543,7 +543,7 @@
 
     "@trpg-scenario-maker/eslint-config-custom": ["@trpg-scenario-maker/eslint-config-custom@workspace:packages/eslint-config-custom"],
 
-    "@trpg-scenario-maker/frontend": ["@trpg-scenario-maker/frontend@workspace:apps/frontend"],
+    "@trpg-scenario-maker/frontend": ["@trpg-scenario-maker/frontend@workspace:apps/scenario-editor"],
 
     "@trpg-scenario-maker/graphdb": ["@trpg-scenario-maker/graphdb@workspace:packages/graphdb"],
 
