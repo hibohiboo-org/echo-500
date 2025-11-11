@@ -1,7 +1,6 @@
 import { createSignal } from 'solid-js';
-import solidLogo from './assets/solid.svg';
+import solidLogo from '../assets/solid.svg';
 import viteLogo from '/vite.svg';
-import './App.css';
 
 function App() {
   const [count, setCount] = createSignal(0);
@@ -9,6 +8,35 @@ function App() {
   return (
     <>
       <div>
+        <style>
+          {`
+@scope {
+
+
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.solid:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .read-the-docs {
+    color: #888;
+  }
+}
+
+`}
+        </style>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} class="logo" alt="Vite logo" />
         </a>
