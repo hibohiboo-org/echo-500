@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
 
-const basePath = 'trpg-scenario-maker';
+const basePath = 'scenario-editor';
 
 // https://vite.dev/config/
 export default defineConfig({
