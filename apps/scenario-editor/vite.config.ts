@@ -32,6 +32,7 @@ export default defineConfig({
   },
 
   build: {
+    outDir: '../dist/scenario-editor',
     chunkSizeWarningLimit: 600,
     rollupOptions: {
       output: {

@@ -15,4 +15,22 @@ export default defineConfig({
       '@': path.join(__dirname, './src'),
     },
   },
+  build: {
+    outDir: '../dist/rulebook',
+    rollupOptions: {
+      output: {
+        manualChunks: (moduleId) => {
+          if (moduleId.includes('node_modules')) {
+            return chunkRule(moduleId);
+          }
+          return null;
+        },
+      },
+    },
+  },
 });
+function chunkRule(moduleId: string) {
+  if (moduleId.includes('solid')) return 'solid';
+
+  return 'vendor';
+}
